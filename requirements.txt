@@ -1,0 +1,16 @@
+tweepy>=4.15.0
+pandas>=2.0
+pyarrow>=11.0
+fastparquet>=0.9
+sniffio
+aiohttp
+snscrape
+scikit-learn
+sentence-transformers   
+numpy
+matplotlib
+tqdm
+pybloomfiltermmap3      
+python-dateutil
+regex
+loguru

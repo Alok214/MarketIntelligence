@@ -1,0 +1,50 @@
+{
+  "collection": {
+    "target_tweets": 100,
+    "max_tweets_per_hashtag": 300,
+    "collection_interval_minutes": 30,
+    "max_concurrent_requests": 3,
+    "rate_limit_buffer": 20,
+    "retry_delay_seconds": 60
+  },
+  "processing": {
+    "max_text_length": 500,
+    "min_engagement_threshold": 0,
+    "sentiment_smoothing_window": 10,
+    "text_cleaning_aggressive": true,
+    "feature_extraction_enabled": true
+  },
+  "storage": {
+    "compression": "snappy",
+    "max_file_size_mb": 100,
+    "backup_enabled": true,
+    "auto_cleanup_days": 30,
+    "parquet_engine": "pyarrow"
+  },
+  "visualization": {
+    "max_plot_points": 1000,
+    "update_interval_ms": 5000,
+    "color_scheme": "viridis",
+    "dpi": 300,
+    "figure_size": [12, 8]
+  },
+  "signals": {
+    "sentiment_weight": 0.4,
+    "volume_weight": 0.3,
+    "influence_weight": 0.3,
+    "confidence_level": 0.95,
+    "smoothing_enabled": true
+  },
+  "hashtags": {
+    "primary": ["#nifty50", "#sensex", "#intraday", "#banknifty"],
+    "secondary": ["#nse", "#bse", "#stockmarket", "#trading"],
+    "extended": ["#indianmarket", "#equity", "#options", "#futures"]
+  },
+  "logging": {
+    "level": "INFO",
+    "file_enabled": true,
+    "console_enabled": true,
+    "max_file_size_mb": 10,
+    "backup_count": 5
+  }
+}
